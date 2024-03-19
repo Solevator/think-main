@@ -17,6 +17,12 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v3
 
+      - name: Generate package-lock.json (if it doesn't exist)
+        run: |
+          if [ ! -f package-lock.json ]; then
+            npm install --package-lock-only
+          fi
+
       - name: Install dependencies
         uses: bahmutov/npm-install@v1
 
