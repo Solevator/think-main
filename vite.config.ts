@@ -14,5 +14,5 @@ export default defineConfig({
       src: path.resolve(packageRoot, "./src"),
     },
   },
-  base: "/vite-deploy/",
+  base: "/think-main/",
 });
