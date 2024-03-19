@@ -4,7 +4,7 @@ import { ErrorPage } from "../pages/error";
 
 const router = createBrowserRouter([
   {
-    path: "/think-main",
+    path: "/",
     element: <MainPage />,
     errorElement: <ErrorPage />,
   },
